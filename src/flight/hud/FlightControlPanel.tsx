@@ -1,7 +1,7 @@
 import "foss-earth/windowing.css";
 
 import { createHelpTooltip, createParameterSection, MeshInspectorPanel, WindowOverlay, type PanelSection, type WindowOverlayHandle } from "foss-earth/shell";
-import type { MeshInspectorHandle } from "foss-earth/diagnostics";
+import type { MeshInspectorHandle } from "foss-earth/diagnosticDrawing";
 import type { SettingsRegistry } from "foss-earth/settings";
 import {
   type GeodeticLocation,
