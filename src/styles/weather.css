@@ -1,0 +1,54 @@
+/* Native controls wrap as a paragraph grid; the host owns tab/window placement. */
+.foss-earth-manual-wind {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  padding: 4px 18px 22px;
+}
+
+.foss-earth-manual-wind__heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.foss-earth-manual-wind__heading span {
+  display: block;
+  color: var(--foss-earth-muted, currentColor);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.foss-earth-manual-wind__heading strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+.foss-earth-manual-wind__field {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  width: max-content;
+  max-width: 100%;
+}
+
+.foss-earth-manual-wind__field output {
+  font-variant-numeric: tabular-nums;
+}
+
+.foss-earth-manual-wind__command {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}

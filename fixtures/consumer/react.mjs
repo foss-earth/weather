@@ -1,0 +1,16 @@
+import assert from "node:assert/strict";
+import { realpathSync } from "node:fs";
+import { registerHooks } from "node:module";
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+const workspaceRoot = realpathSync(path.dirname(fileURLToPath(import.meta.url))) + path.sep;
+registerHooks({ resolve(specifier, context, nextResolve) { const resolved = nextResolve(specifier, context); if (resolved.url.startsWith("file:") && !realpathSync(fileURLToPath(resolved.url)).startsWith(workspaceRoot)) throw new Error(`Dependency escaped installed consumer: ${specifier}`); return resolved; } });
+const { createElement } = await import("react");
+const { renderToStaticMarkup } = await import("react-dom/server");
+const { ManualWindPanel, LegacyManualWindPanel } = await import("@foss-earth/weather/react");
+const onChange = () => { throw new Error("Rendering must not request wind changes"); };
+const markup = renderToStaticMarkup(createElement(ManualWindPanel, { value: { windDirectionDeg: 270, windSpeedKts: 12 }, onChange }));
+assert.match(markup, /270°/); assert.match(markup, /12 kt/); assert.match(markup, /max="359"/); assert.match(markup, /max="50"/);
+const legacy = renderToStaticMarkup(createElement(LegacyManualWindPanel, { initialWeather: { windDirectionDeg: 45, windSpeedKts: 8 }, onWeatherChange: onChange }));
+assert.match(legacy, /45°/); assert.match(legacy, /8 kt/);
+process.stdout.write("Weather installed-artifact optional React controlled/legacy presentation passed (server render).\n");

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "owner": "foss-earth/weather",
+  "preparedAtUtc": "2026-10-09T21-11-19Z",
+  "status": "SOURCE-ONLY current bytes; checks/history/installed consumers/artifacts/adoption/admission UNRUN",
+  "sourceRevision": "8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2",
+  "priorSourceReceipt": "build/source-only/2026-10-09T21-11-19Z/SOURCE_RECEIPT.json.before",
+  "sourceManifestPath": "build/source-only/2026-10-09T21-11-19Z/source-manifest.json",
+  "sourceManifestEncoding": "UTF-8 sorted path JSON array, indent2, trailing LF; ignored outputs and receipt excluded",
+  "sourceManifestSha256": "81103045c2ecf2d3a7b56c5790d47b5f4520337df33416b80a44c6eb77f13fcd",
+  "sourceFileCount": 32,
+  "provenancePath": "provenance.json",
+  "provenanceSha256": "c5bf414913213a244378e983cfd0443f75580a8a7d097bacab828e757b4a85c0",
+  "publicExports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    },
+    "./styles.css": "./dist/styles/weather.css"
+  },
+  "bins": {},
+  "sourceFiles": [
+    {
+      "path": ".attribution-release.json",
+      "sha256": "c5324ea9476d99afbc5f63e9d5a15d597dd7ee27546499c392046b55fc361131",
+      "bytes": 2045
+    },
+    {
+      "path": ".attribution.json",
+      "sha256": "e4493f3031a5051398339cf9649a8e18efb8ece96f512761d8d145daf8347f7a",
+      "bytes": 491
+    },
+    {
+      "path": ".github/workflows/attribution-check.yml",
+      "sha256": "63349507da9d004752bb0e43c681089dfd9fd6c26bf8047738cb19025f15135e",
+      "bytes": 406
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "ce16c01158260246e80455f0fd751a9af67372900af72eb2d963c91d9bff1718",
+      "bytes": 33
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "118a77e18471be60397ec053dbeebf7c7c9137d4257d8234317146d896267d8b",
+      "bytes": 1051
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "c3a907b9e659a0f5a4c701be1b34a7d416526c3a99f129bf4d3b9db09c7ffa9d",
+      "bytes": 3442
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "df8f414a6f5051ced1922d87200369964b1f1e7410889d24405448f7d267c18c",
+      "bytes": 2762
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "bytes": 34523
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "5bd2680c0815648da8724daa0cd07afae3d3e5da59ec3c4b0837fd10e12628bd",
+      "bytes": 469
+    },
+    {
+      "path": "README.md",
+      "sha256": "2af48a97963a7eb8c73727c8cfec452e2f9e545c973b0c7141ed581e190a2f9f",
+      "bytes": 5584
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "6baf6d3c1755360f5d902275c893074fd17af2fc10c140fe932b8a90d77d9942",
+      "bytes": 791
+    },
+    {
+      "path": "dependency-pins.json",
+      "sha256": "6af9a24b2c65dfc91f6bba5aadcc0fa388d1ab3fa98773eb2970940ecbbff448",
+      "bytes": 263
+    },
+    {
+      "path": "docs/proposals/weather.md",
+      "sha256": "1726317eeeb8eb4d35bab12fc144309ea99870798216988c4141947e79d972c3",
+      "bytes": 78832
+    },
+    {
+      "path": "docs/source-specifications.md",
+      "sha256": "ea8e2460ad732d34a77ff31e6f8a808a5e4c816660f62c51fa1be053b389b2ec",
+      "bytes": 617
+    },
+    {
+      "path": "eslint.config.js",
+      "sha256": "8d7a73439fe782a93236766ac43e192d180e6545f59783c68d985b1f97ff851c",
+      "bytes": 596
+    },
+    {
+      "path": "fixtures/consumer/host-dom.mjs",
+      "sha256": "47a7541cfe93218d107b0447a5a8e7b145875abca75aaad557c36dd419dff8c0",
+      "bytes": 3903
+    },
+    {
+      "path": "fixtures/consumer/minimal.mjs",
+      "sha256": "5b51751c2ffebaf570952025bf6266afa418d28a622c15827a86d0be5814fc44",
+      "bytes": 1337
+    },
+    {
+      "path": "fixtures/consumer/minimal.ts",
+      "sha256": "93d3a3254e0141fd0b944c2dbe4e007804b98ac5ec9e44f6be447cf3ce95b38b",
+      "bytes": 555
+    },
+    {
+      "path": "fixtures/consumer/react.mjs",
+      "sha256": "f74597616077951e9d903e1404eb6b9781b06adf2ad7af9c997f154151e82137",
+      "bytes": 1518
+    },
+    {
+      "path": "fixtures/consumer/tsconfig.json",
+      "sha256": "d3dca0e2f4a3036d6b1c9d8b0cec371392453f05b3999c0e932d8b6ac85b2440",
+      "bytes": 403
+    },
+    {
+      "path": "package.json",
+      "sha256": "e9f3cb063c53287f0edc883cb5f384e7f9695456f2e6e984bae6cf1282c016bd",
+      "bytes": 2343
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "c5bf414913213a244378e983cfd0443f75580a8a7d097bacab828e757b4a85c0",
+      "bytes": 15028
+    },
+    {
+      "path": "scripts/copy-assets.mjs",
+      "sha256": "d81e36bc8a451a754dedd1daaed5397b73c4dc9e1af582220db1520bd7e5d819",
+      "bytes": 254
+    },
+    {
+      "path": "src/LegacyManualWindPanel.tsx",
+      "sha256": "067b227c98e021f7dcd57c713905aa985c549fb94777e7e2e09c804c2433306b",
+      "bytes": 899
+    },
+    {
+      "path": "src/ManualWindPanel.tsx",
+      "sha256": "b34484b449ca7292fea068ed78f39659505a24a561d840478b51de08433edb3c",
+      "bytes": 2207
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "e107da195fc9d14b7814b679534db0c482e74c4aa25c6c9f582560f13e42700a",
+      "bytes": 632
+    },
+    {
+      "path": "src/react.ts",
+      "sha256": "bc2b50e955db60f67bb020bc61883ad7c1f2bef870d8d1b61a261fc28d6d5733",
+      "bytes": 184
+    },
+    {
+      "path": "src/styles/weather.css",
+      "sha256": "00a35dda35698281047b020bef677d08066feadc14658fc96cca245a3e735502",
+      "bytes": 1087
+    },
+    {
+      "path": "tests/manual-wind.test.tsx",
+      "sha256": "58a08521a8cd9a56397ae3cb728968c4dbc2327149e09f76fd8aff76c3e727b7",
+      "bytes": 5733
+    },
+    {
+      "path": "tests/package-consumer.mjs",
+      "sha256": "c0912ae6e369104a13529e84150f96760196ebdd0de7874ec61c08d7ebac3985",
+      "bytes": 10341
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "76bbb85969b1b1d0ed90946dac6dc34504347e5e0cf7b2dc090fa6278b6150e6",
+      "bytes": 626
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha256": "401a7f85f82ddeeab2891c486da3a6a9716f7126e8ec7a535f1d29ebc5e9bba8",
+      "bytes": 472
+    }
+  ],
+  "frozenFoundation": null,
+  "sharedCi": {
+    "revision": "9e046dd482e0229dc7c7b2d71b079d5905664656",
+    "archiveSha256": "450ede699f55f9b9c78146eadb73de7c6297e56553e7d7f9e5b164786a7beb24",
+    "policySha256": "9ca88bf5861685e22e65e5f39fa65b05faaf9c218875fccbecce1b9f2dca5bd3",
+    "callerSha256": "63349507da9d004752bb0e43c681089dfd9fd6c26bf8047738cb19025f15135e",
+    "installedConformance": null,
+    "fullIntendedRefAudit": null,
+    "actualRemoteAdmissionVerified": false,
+    "docsOnlyMetadataSkipped": false
+  },
+  "checksExecuted": [],
+  "currentArtifact": null,
+  "acceptedArtifacts": [],
+  "actualConsumerAdoption": null,
+  "rollback": "Canonical original application remains live; frozen prior artifacts and earlier exact source receipts retained. New source has not replaced or retired any consumer.",
+  "outstandingBlockers": [
+    "granted bounded owner and actual public-only consumer checks",
+    "exact replacement prerequisites",
+    "source/API/CSS link/asset compatibility",
+    "expanded clean lineage and actual complete intended publication scopes",
+    "actual installed CI conformance",
+    "final source/archive/export seals",
+    "actual app adoption",
+    "coordinator public transport and remote admission"
+  ],
+  "policySentence": "You cannot have AI as a co-author, or your contributions will be rejected."
+}

@@ -1,0 +1,344 @@
+{
+  "format": "foss-earth.extraction-provenance",
+  "version": 1,
+  "source": {
+    "repository": "https://github.com/0SFS/0SFS.github.io",
+    "revision": "8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2",
+    "tree": "1198098ab13b30f01cf1862d9bbcf9c5fc939fb6"
+  },
+  "package": {
+    "name": "@foss-earth/weather",
+    "version": "0.1.0",
+    "status": "private-staging-candidate"
+  },
+  "history": "Cross-source Flight-to-Earth filtered lineage requires coordinator confirmation. No history or source authorship change performed.",
+  "files": [
+    {
+      "source": "LICENSE",
+      "destination": "LICENSE",
+      "sourceBlob": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "sourceSha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "transformations": [
+        "Retain verbatim original source license/notice; no new third-party grant."
+      ],
+      "destinationSha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "source": "NOTICE",
+      "destination": "NOTICE",
+      "sourceBlob": "0fd5ffa8df19d0547c5d80bb691c478b31033600",
+      "sourceSha256": "5bd2680c0815648da8724daa0cd07afae3d3e5da59ec3c4b0837fd10e12628bd",
+      "transformations": [
+        "Retain verbatim original source license/notice; no new third-party grant."
+      ],
+      "destinationSha256": "5bd2680c0815648da8724daa0cd07afae3d3e5da59ec3c4b0837fd10e12628bd"
+    },
+    {
+      "source": "src/flight/hud/FlightControlPanel.tsx",
+      "destination": "src/index.ts",
+      "sourceBlob": "eb72affacaaff26da214cb4dffa3bdcbad7c8a78",
+      "sourceSha256": "fa4c4e10cd103893d98ff09abfe31902ffdc26fe73921ec12b0f5db4a1e9c02c",
+      "transformations": [
+        "Extract only FlightWeatherState shape as ManualWindState, original two bounds and calm values; no physics/JSBSim conversion, providers, registry or clock."
+      ],
+      "destinationSha256": "e107da195fc9d14b7814b679534db0c482e74c4aa25c6c9f582560f13e42700a"
+    },
+    {
+      "source": "src/flight/hud/FlightControlPanel.tsx",
+      "destination": "src/ManualWindPanel.tsx",
+      "sourceBlob": "eb72affacaaff26da214cb4dffa3bdcbad7c8a78",
+      "sourceSha256": "fa4c4e10cd103893d98ff09abfe31902ffdc26fe73921ec12b0f5db4a1e9c02c",
+      "transformations": [
+        "Extract WeatherPanel labels/ranges/reset/merge behavior as host-controlled value/onChange; optional host icon in place of feature icon import. Feature/flight imports excluded.",
+        "Explicit step=any preserves continuous numeric pair requests within the agreed existing bounds; no unit conversion or weather evolution."
+      ],
+      "destinationSha256": "b34484b449ca7292fea068ed78f39659505a24a561d840478b51de08433edb3c"
+    },
+    {
+      "source": "src/flight/hud/FlightControlPanel.tsx",
+      "destination": "src/LegacyManualWindPanel.tsx",
+      "sourceBlob": "eb72affacaaff26da214cb4dffa3bdcbad7c8a78",
+      "sourceSha256": "fa4c4e10cd103893d98ff09abfe31902ffdc26fe73921ec12b0f5db4a1e9c02c",
+      "transformations": [
+        "Retain original initialWeather useState and onWeatherChange behavior as explicitly documented optional remount-seeded wrapper."
+      ],
+      "destinationSha256": "067b227c98e021f7dcd57c713905aa985c549fb94777e7e2e09c804c2433306b"
+    },
+    {
+      "source": "src/styles/flight.css",
+      "destination": "src/styles/weather.css",
+      "sourceBlob": "96242b6f0428a1f7229af6c1dd940a7853074e48",
+      "sourceSha256": "b0da4c921e5385c8cbac67825f834317352bc3adef93c8374e761a884b78c44f",
+      "transformations": [
+        "Extract only current manual wind presentation spacing/header/reset control styles; rename weather-owned selectors, host theme colors. Replace source content grid with mandated paragraph flex wrapping; exclude all aircraft/metric/layout feature rules."
+      ],
+      "destinationSha256": "00a35dda35698281047b020bef677d08066feadc14658fc96cca245a3e735502"
+    },
+    {
+      "source": "docs/proposals/weather.md",
+      "destination": "docs/proposals/weather.md",
+      "sourceBlob": "1b1067ee85ef522d94b81743c0dcff1d8227e983",
+      "sourceSha256": "1726317eeeb8eb4d35bab12fc144309ea99870798216988c4141947e79d972c3",
+      "destinationSha256": "1726317eeeb8eb4d35bab12fc144309ea99870798216988c4141947e79d972c3",
+      "destinationBytes": 78832,
+      "transformations": [
+        "Immutable dated source prose retained byte for byte; staged/proposed capability statements are not implementation or validation receipts. Original relative source/evidence links require accepted public routing."
+      ],
+      "sourceRepository": "foss-earth/foss-earth.github.io",
+      "sourceRevision": "90e23b3ee96f53ec5900afc5991a21fffa58649d"
+    }
+  ],
+  "newFiles": [
+    ".attribution-release.json",
+    ".attribution.json",
+    ".gitignore",
+    "AGENTS.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "README.md",
+    "SECURITY.md",
+    "dependency-pins.json",
+    "eslint.config.js",
+    "package.json",
+    "tsconfig.json",
+    "vitest.config.ts",
+    ".github/workflows/attribution-check.yml",
+    "docs/source-specifications.md",
+    "fixtures/consumer/host-dom.mjs",
+    "fixtures/consumer/minimal.mjs",
+    "fixtures/consumer/minimal.ts",
+    "fixtures/consumer/react.mjs",
+    "fixtures/consumer/tsconfig.json",
+    "scripts/copy-assets.mjs",
+    "src/react.ts",
+    "tests/manual-wind.test.tsx",
+    "tests/package-consumer.mjs"
+  ],
+  "pending": [
+    "Source checks and artifact consumer await granted coordinator window.",
+    "Cross-source lineage, exact release and Flight adoption.",
+    "Pinned shared CI policy/caller/conformance and actual remote admission."
+  ],
+  "sourcePreparationStatus": "unrun; archive/conformance/full-ref/history/host adoption acceptance pending",
+  "primarySourceSnapshot": {
+    "createdAtUtc": "2026-10-09T21-11-19Z",
+    "status": "source-only; no qualification or artifact seal",
+    "authoredFiles": [
+      {
+        "path": ".attribution-release.json",
+        "sha256": "c5324ea9476d99afbc5f63e9d5a15d597dd7ee27546499c392046b55fc361131",
+        "bytes": 2045,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": ".attribution.json",
+        "sha256": "e4493f3031a5051398339cf9649a8e18efb8ece96f512761d8d145daf8347f7a",
+        "bytes": 491,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "ce16c01158260246e80455f0fd751a9af67372900af72eb2d963c91d9bff1718",
+        "bytes": 33,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "118a77e18471be60397ec053dbeebf7c7c9137d4257d8234317146d896267d8b",
+        "bytes": 1051,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha256": "c3a907b9e659a0f5a4c701be1b34a7d416526c3a99f129bf4d3b9db09c7ffa9d",
+        "bytes": 3442,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha256": "df8f414a6f5051ced1922d87200369964b1f1e7410889d24405448f7d267c18c",
+        "bytes": 2762,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "README.md",
+        "sha256": "2af48a97963a7eb8c73727c8cfec452e2f9e545c973b0c7141ed581e190a2f9f",
+        "bytes": 5584,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha256": "6baf6d3c1755360f5d902275c893074fd17af2fc10c140fe932b8a90d77d9942",
+        "bytes": 791,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "dependency-pins.json",
+        "sha256": "6af9a24b2c65dfc91f6bba5aadcc0fa388d1ab3fa98773eb2970940ecbbff448",
+        "bytes": 263,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "eslint.config.js",
+        "sha256": "8d7a73439fe782a93236766ac43e192d180e6545f59783c68d985b1f97ff851c",
+        "bytes": 596,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "package.json",
+        "sha256": "e9f3cb063c53287f0edc883cb5f384e7f9695456f2e6e984bae6cf1282c016bd",
+        "bytes": 2343,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "tsconfig.json",
+        "sha256": "76bbb85969b1b1d0ed90946dac6dc34504347e5e0cf7b2dc090fa6278b6150e6",
+        "bytes": 626,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "vitest.config.ts",
+        "sha256": "401a7f85f82ddeeab2891c486da3a6a9716f7126e8ec7a535f1d29ebc5e9bba8",
+        "bytes": 472,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": ".github/workflows/attribution-check.yml",
+        "sha256": "63349507da9d004752bb0e43c681089dfd9fd6c26bf8047738cb19025f15135e",
+        "bytes": 406,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "docs/source-specifications.md",
+        "sha256": "ea8e2460ad732d34a77ff31e6f8a808a5e4c816660f62c51fa1be053b389b2ec",
+        "bytes": 617,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "fixtures/consumer/host-dom.mjs",
+        "sha256": "47a7541cfe93218d107b0447a5a8e7b145875abca75aaad557c36dd419dff8c0",
+        "bytes": 3903,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "fixtures/consumer/minimal.mjs",
+        "sha256": "5b51751c2ffebaf570952025bf6266afa418d28a622c15827a86d0be5814fc44",
+        "bytes": 1337,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "fixtures/consumer/minimal.ts",
+        "sha256": "93d3a3254e0141fd0b944c2dbe4e007804b98ac5ec9e44f6be447cf3ce95b38b",
+        "bytes": 555,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "fixtures/consumer/react.mjs",
+        "sha256": "f74597616077951e9d903e1404eb6b9781b06adf2ad7af9c997f154151e82137",
+        "bytes": 1518,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "fixtures/consumer/tsconfig.json",
+        "sha256": "d3dca0e2f4a3036d6b1c9d8b0cec371392453f05b3999c0e932d8b6ac85b2440",
+        "bytes": 403,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "scripts/copy-assets.mjs",
+        "sha256": "d81e36bc8a451a754dedd1daaed5397b73c4dc9e1af582220db1520bd7e5d819",
+        "bytes": 254,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "src/react.ts",
+        "sha256": "bc2b50e955db60f67bb020bc61883ad7c1f2bef870d8d1b61a261fc28d6d5733",
+        "bytes": 184,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "tests/manual-wind.test.tsx",
+        "sha256": "58a08521a8cd9a56397ae3cb728968c4dbc2327149e09f76fd8aff76c3e727b7",
+        "bytes": 5733,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "tests/package-consumer.mjs",
+        "sha256": "c0912ae6e369104a13529e84150f96760196ebdd0de7874ec61c08d7ebac3985",
+        "bytes": 10341,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      }
+    ],
+    "checksExecuted": [],
+    "sourceRemoved": false,
+    "canonicalAppConsumerAdoption": null,
+    "acceptedArtifacts": []
+  },
+  "sourceOnlyCommunityPreparation": {
+    "preparedAtUtc": "2026-10-09T19:26:48Z",
+    "status": "SOURCE-ONLY released bytes; no implementation checks, installation, artifact, history, adoption or remote admission claim",
+    "parentSourceRevision": "8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2",
+    "parentPolicyPatch": "/Users/felg/gh/0sfs/build/repository-split/community-policy/20261009T190532Z/patches/54.patch",
+    "parentPolicyPatchSha256": "ed084414a2b1116c93bd9d54c850185dbe84f891806ea818d9df44947b62863a",
+    "parentExpectedBeforeActualBytesMatched": true,
+    "gitApplyCheck": {
+      "exitCode": 0,
+      "log": "build/source-only/2026-10-09-weather-community/git-apply-check.log"
+    },
+    "exactPreparedPatchAppliedBeforeMerge": true,
+    "communityFiles": [
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha256": "c3a907b9e659a0f5a4c701be1b34a7d416526c3a99f129bf4d3b9db09c7ffa9d",
+        "bytes": 3442
+      },
+      {
+        "path": "SECURITY.md",
+        "sha256": "6baf6d3c1755360f5d902275c893074fd17af2fc10c140fe932b8a90d77d9942",
+        "bytes": 791
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha256": "bacf6b27e69081b8aed4110e82fde13f6d3c31e35ebeafa1a07309e8707976eb",
+        "bytes": 2196
+      }
+    ],
+    "ownerGuidance": "Original README bytes retained as prefix; original two Weather CONTRIBUTING paragraphs retained verbatim under Weather ownership and validation.",
+    "packageFiles": "CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md, SOURCE_LINEAGE.json and SOURCE_RECEIPT.json explicitly distributed; primary must create SOURCE_LINEAGE.json from actual selected history before packaging.",
+    "fixtureRepair": "fixtures/consumer/tsconfig.json sets skipLibCheck:false; installed harness already uses strict complete declaration closure.",
+    "textOnlyHarnessReview": {
+      "requiredPrerequisites": {
+        "@foss-earth/weather": "0.1.0",
+        "react": "19.2.6",
+        "react-dom": "19.2.6",
+        "@types/react": "19.2.14",
+        "@types/react-dom": "19.2.3",
+        "typescript": "5.9.3",
+        "jsdom": "29.1.1"
+      },
+      "flags": [
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "owner-local cache/prefix/TMPDIR"
+      ],
+      "closure": "sha256 and bytes pinned for every supplied archive; one exact installed version per name; nested/bundled dependencies refused; runtime realpath guards and negative controls; skipLibCheck:false with trace plus complete program source-file realpaths",
+      "assertions": "Pure/SSR/DOM behavior and all existing assertions retained byte for byte; harness and runtime are unchanged.",
+      "installedOwnerDependencies": "No Weather node_modules React/ReactDOM/jsdom manifests exist at review time; required actual installed archive consumer remains UNRUN."
+    },
+    "unchanged": [
+      "all runtime source",
+      "all test/harness assertion texts and tests",
+      "manual wind public contracts",
+      "original staged Weather specification bytes",
+      "LICENSE and NOTICE",
+      "shared CI policy/caller pins",
+      "optional React/DOM peer meaning",
+      "dependency pins"
+    ],
+    "checksExecuted": [],
+    "sourceLineage": "Absent; primary creates actual history evidence after explicit child release, never fabricated by this source-only lease",
+    "docsOnlyMetadataSkipped": false
+  }
+}
