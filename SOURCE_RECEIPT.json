@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "owner": "foss-earth/weather",
   "preparedAtUtc": "2026-10-09T21-11-19Z",
-  "status": "Current source seal; individual retained check receipts define qualification. Installed archive and application/remote adoption separately recorded in external release descriptor.",
+  "status": "Current portable source seal; external exact delivery describes implementation/browser/ref qualification and outstanding remote gates.",
   "sourceRevision": "8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2",
   "priorSourceReceipt": "build/source-only/2026-10-09T21-11-19Z/SOURCE_RECEIPT.json.before",
   "sourceManifestPath": "build/source-only/2026-10-09T21-11-19Z/source-manifest.json",
@@ -212,11 +212,12 @@
     "coordinator public transport and remote admission"
   ],
   "policySentence": "You cannot have AI as a co-author, or your contributions will be rejected.",
-  "verifiedAtUtc": "2026-10-10T00:09:16.175506+00:00",
+  "verifiedAtUtc": "2026-10-10T03:26:45.528136+00:00",
   "currentSourceManifest": {
-    "path": "/Users/felg/gh/foss-earth/foss-earth.github.io/build/repository-split/checks/2026-10-09-granted-verification/weather-r4-sealed-source-files.json",
-    "sha256": "ec6c6227667876ba760c3cfc5261fcbca020269ab7ba610fc3af37e426383e6f",
-    "fileCount": 34
+    "evidenceId": "weather-current-source-files.json",
+    "sha256": "0557fc22793170a4b6f857f33cebf22650df92c1c8d9cb632be7175a3215e606",
+    "fileCount": 34,
+    "scope": "Private retained documentary evidence, not an artifact path or public URL"
   },
   "currentSharedCi": {
     "revision": "1db73d1ddb342e348a2c9e8387f7bbc7ebb3225e",
@@ -224,24 +225,29 @@
     "artifactSha256": "bd884d925b8a7339b15fa61a477cf652bb73d41cc68addf50a050ab6cb151611",
     "descriptorSha256": "d60ee5067185a768f0890da2ed87d82dbfa08f28282e4d05a35e823c70307122",
     "callerSha256": "b9fdfbf4bd61ed727abaef4fd9990b92714a6d2c1388feec600dc16337436b2c",
-    "fullIntendedRefs": "external release descriptor; mandatory complete nonempty audit after this commit",
+    "fullIntendedRefs": "complete external delivery audit after this commit",
     "remoteAdmissionVerifiedByOwner": false
   },
   "currentChecks": [
     {
-      "receipt": "/Users/felg/gh/foss-earth/foss-earth.github.io/build/repository-split/checks/2026-10-09-granted-verification/weather-ci-install.json",
+      "evidenceId": "weather-ci-install.json",
       "sha256": "4900d8c65516e1ec10754cfcec006eee8bf2df6eaa0ee398fdc48fed742f415a",
       "exitCode": 0
     },
     {
-      "receipt": "/Users/felg/gh/foss-earth/foss-earth.github.io/build/repository-split/checks/2026-10-09-granted-verification/weather-current-conformance.json",
+      "evidenceId": "weather-current-conformance.json",
       "sha256": "85b1dfc17ac5663fc5d9376d63cdbb7eb036b6dc92cb9d345ac0dfaf0a2ef583",
       "exitCode": 0
     },
     {
-      "receipt": "/Users/felg/gh/foss-earth/foss-earth.github.io/build/repository-split/checks/2026-10-09-granted-verification/weather-r4-track-canonical.json",
+      "evidenceId": "weather-r4-track-canonical.json",
       "sha256": "ed1e2e5c54df3ec546786726aff66d9c2bdd078d22e01fc98bafa82c24d16cad",
       "exitCode": 0
     }
-  ]
+  ],
+  "publicationEvidence": {
+    "scope": "Portable public provenance for prior retained local qualification. Execution/source manifests remain private retained evidence identified by documentary evidence IDs and their unchanged SHA256 seals. Evidence IDs are not package-relative files or public download URLs.",
+    "originalReceiptSha256": "2ea491c56441aca1e1a09e25b786f90a683807b63faf5e99eb07f0f661d90ac6",
+    "currentPreparation": "Metadata-only portable publication candidate; new source/artifact/ref qualification remains pending. Existing individual check receipts and exact archive descriptors retain qualification only for their original bytes and scope."
+  }
 }

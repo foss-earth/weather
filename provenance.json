@@ -278,7 +278,6 @@
     "preparedAtUtc": "2026-10-09T19:26:48Z",
     "status": "SOURCE-ONLY released bytes; no implementation checks, installation, artifact, history, adoption or remote admission claim",
     "parentSourceRevision": "8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2",
-    "parentPolicyPatch": "/Users/felg/gh/0sfs/build/repository-split/community-policy/20261009T190532Z/patches/54.patch",
     "parentPolicyPatchSha256": "ed084414a2b1116c93bd9d54c850185dbe84f891806ea818d9df44947b62863a",
     "parentExpectedBeforeActualBytesMatched": true,
     "gitApplyCheck": {
@@ -339,6 +338,8 @@
     ],
     "checksExecuted": [],
     "sourceLineage": "Absent; primary creates actual history evidence after explicit child release, never fabricated by this source-only lease",
-    "docsOnlyMetadataSkipped": false
+    "docsOnlyMetadataSkipped": false,
+    "parentPolicyPatchEvidenceId": "community-policy-20261009T190532Z-54.patch",
+    "portablePolicyEvidence": "Documentary evidence ID for the original parent policy patch retained privately with unchanged parentPolicyPatchSha256; not a package-relative file or public download URL."
   }
 }

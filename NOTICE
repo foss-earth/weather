@@ -3,3 +3,18 @@
 The project may also offer separately negotiated commercial terms to copyright holders' customers; see COMMERCIAL_LICENSE.md. Those terms do not modify the AGPL grant.
 
 Third-party packages, JSBSim WASM and simulation data, aircraft/reference assets, trademarks, and online services have their own notices and terms. See THIRD_PARTY_LICENSES.md and ASSET_LICENSES.md.
+
+Retained source-document context
+
+The notice above is preserved verbatim from the original parent application at
+revision 8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2. Its named documents describe
+that parent application's policies and historical audit:
+
+- Commercial licensing: https://github.com/0SFS/0SFS.github.io/blob/8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2/COMMERCIAL_LICENSE.md
+- Third-party audit: https://github.com/0SFS/0SFS.github.io/blob/8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2/THIRD_PARTY_LICENSES.md
+- Asset policy: https://github.com/0SFS/0SFS.github.io/blob/8bc8af6080ebb5e97c0982d2c8ff5e22519f5ac2/ASSET_LICENSES.md
+
+Weather extracts manual wind state and presentation. These historical documents
+do not certify current package dependencies or grant rights to external imagery,
+data, aircraft or other assets. Their independent licenses and terms remain in
+force. No parent assets are incorporated by these references.
