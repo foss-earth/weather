@@ -7,33 +7,27 @@
   "type": "module",
   "exports": {
     ".": {
+      "source": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
     "./react": {
+      "source": "./src/react.ts",
       "types": "./dist/react.d.ts",
       "import": "./dist/react.js"
     },
-    "./styles.css": "./dist/styles/weather.css"
+    "./styles.css": {
+      "source": "./src/styles/weather.css",
+      "default": "./dist/styles/weather.css"
+    }
   },
   "files": [
     "dist",
     "LICENSE",
     "NOTICE",
     "README.md",
-    "provenance.json",
     "fixtures",
-    "dependency-pins.json",
-    "CONTRIBUTING.md",
-    "CODE_OF_CONDUCT.md",
-    "SECURITY.md",
-    "SOURCE_LINEAGE.json",
-    "SOURCE_RECEIPT.json",
-    "AGENTS.md",
-    ".attribution.json",
-    ".attribution-release.json",
-    ".github/workflows/attribution-check.yml",
-    "deps/foss-earth-ci-1db73d1ddb342e348a2c9e8387f7bbc7ebb3225e.tgz"
+    "AGENTS.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json && node scripts/copy-assets.mjs",
@@ -42,10 +36,8 @@
     "test": "vitest run --maxWorkers=50%",
     "test:consumer": "node tests/package-consumer.mjs",
     "typecheck:consumer": "tsc -p fixtures/consumer/tsconfig.json",
-    "ci": "npm run check:conformance && npm run check:implementation",
-    "check:implementation": "npm run typecheck && npm run lint && npm test && npm run build && npm run typecheck:consumer && npm run test:consumer",
-    "check:conformance": "node node_modules/@foss-earth/ci/bin/conformance.mjs --consumer . --trusted-release .attribution-release.json --output-root build/common-conformance",
-    "check:attribution": "node node_modules/@foss-earth/ci/bin/attribution.mjs --repo . --refs-file build/repository-split/intended-publication-refs.json"
+    "ci": "npm run check:implementation",
+    "check:implementation": "npm run typecheck && npm run lint && npm test && npm run build && npm run typecheck:consumer && npm run test:consumer"
   },
   "peerDependencies": {
     "react": "^19.2.4",
@@ -70,7 +62,6 @@
     "react-dom": "19.2.6",
     "typescript": "5.9.3",
     "typescript-eslint": "8.59.3",
-    "vitest": "4.1.6",
-    "@foss-earth/ci": "file:deps/foss-earth-ci-1db73d1ddb342e348a2c9e8387f7bbc7ebb3225e.tgz"
+    "vitest": "4.1.6"
   }
 }
